@@ -15,13 +15,13 @@
 
 The aim is to Write a Python program that takes as input a file containing DNA sequences in multi-FASTA format, and computes different analyses.
 
-![picture](https://drive.google.com/uc?export=view&id=1bv68MdK-fhgwYTTR0ld9wzRWg1B-5Kda)
+![picture](https://github.com/H-Zouari/Python_for_genomic_data_science/blob/main/README/1.PNG)
 ---
-![picture](https://drive.google.com/uc?export=view&id=16dWPO0djOhcNODA5tYXQsi_iCT4-EGxM)
+![picture](https://github.com/H-Zouari/Python_for_genomic_data_science/blob/main/README/2.PNG)
 ---
-![picture](https://drive.google.com/uc?export=view&id=1PrgcAwxzhnabFZjrOIcrE59uZ-7SGJKT)
+![picture](https://github.com/H-Zouari/Python_for_genomic_data_science/blob/main/README/3.PNG)
 ---
-![picture](https://drive.google.com/uc?export=view&id=1NFCv8xSeXYkGstCrDAaYb1bk4ovKjWTa)
+![picture](https://github.com/H-Zouari/Python_for_genomic_data_science/blob/main/README/4.PNG)
 ---
 >
 
