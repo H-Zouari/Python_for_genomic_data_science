@@ -64,6 +64,9 @@ seqs = ''
 for dna_record in SeqIO.parse("/content/drive/MyDrive/Colab_Notebooks/Coursera/dna2.fasta", 'fasta'):
   seqs += str(dna_record.seq)
 
+""" Here i created a wrapper function which calculates execution time to then decorate the two 
+functions for finding repeats and compare their perforemance """
+
 def timing(func):
     def wrapper(*arg, **kw):
         start = time.time()
@@ -71,6 +74,7 @@ def timing(func):
         end = time.time()
         return (end  - start), result, func.__name__
     return wrapper
+ 
 @timing
 def find_repeats(seqs):
   hits = re.findall(r'(?=(([ATCG]){12}))', seqs)
@@ -79,7 +83,10 @@ def find_repeats(seqs):
   return freq_motif
 
 print(find_repeats(seqs))
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+"""" this solution comes from https://github.com/burun/Python-for-Genomic-Data-Science-2015-Coursera/blob/master/Final%20exam/question_8_10.py slightly modified, i used it
+to compare perforemance """
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 sequences = []
 for dna_record in SeqIO.parse("/content/drive/MyDrive/Colab_Notebooks/Coursera/dna2.fasta", 'fasta'):
   sequences.append(dna_record.seq)
